@@ -77,6 +77,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
+    # tachi-opengateway-patch — auto-injected by TachiDesk so Claude Code
+    # uses OpenGateway proxy mode (Bearer auth) instead of direct Anthropic.
+    # Job-level env propagates to every step. Safe to remove if you switch
+    # gateways — also delete the ANTHROPIC_BASE_URL/ANTHROPIC_AUTH_TOKEN secrets.
+    env:
+      ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+      ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+
     steps:
       - name: Early checkout
         if: github.event_name == 'issues'
