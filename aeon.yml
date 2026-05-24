@@ -212,7 +212,7 @@ model: claude-opus-4-7
 # provider: direct (default, uses ANTHROPIC_API_KEY) | bankr (uses BANKR_LLM_KEY)
 # Bankr docs: https://docs.bankr.bot/llm-gateway/overview
 gateway:
-  provider: direct
+  provider: bankr
 
 # Output channels
 channels:
