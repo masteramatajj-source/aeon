@@ -7,6 +7,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-05-24 | Aeon: The Agent You Don't Watch | aeon framework / autonomous agents |
 
 ## Recent Digests
 | Date | Type | Key Topics |

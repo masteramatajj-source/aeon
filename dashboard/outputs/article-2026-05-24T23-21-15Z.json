@@ -1,0 +1,23 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "New Article Written"
+      },
+      "children": [
+        "story"
+      ]
+    },
+    "story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Aeon: The Agent You Don't Watch",
+        "href": "https://github.com/aaronjmars/aeon/blob/main/articles/2026-05-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
