@@ -115,6 +115,18 @@ jobs:
           git config user.name "aeonframework"
           git config user.email "aeonframework@proton.me"
 
+      - name: Resolve OpenGateway env  # tachi-opengateway-patch-v2
+        if: steps.work.outputs.mode != ''
+        run: |
+          GW=$(grep -A1 '^gateway:' aeon.yml 2>/dev/null | grep 'provider:' | sed 's/.*provider: *//' | tr -d ' "'"'"'' || true)
+          if [ "$GW" = "opengateway" ]; then
+            echo "ANTHROPIC_BASE_URL=${{ secrets.ANTHROPIC_BASE_URL }}" >> "$GITHUB_ENV"
+            echo "ANTHROPIC_AUTH_TOKEN=${{ secrets.ANTHROPIC_AUTH_TOKEN }}" >> "$GITHUB_ENV"
+            echo "::notice::OpenGateway env exported (TachiDesk patch v2)"
+          else
+            echo "::notice::OpenGateway patch present but aeon.yml gateway.provider is '${GW:-unset}' — skipping (direct/bankr route)"
+          fi
+
       - name: Setup Node.js
         if: steps.work.outputs.mode != ''
         uses: actions/setup-node@v5
