@@ -8,6 +8,7 @@
 | Date | Title | Topic |
 |------|-------|-------|
 | 2026-05-24 | Aeon: The Agent You Don't Watch | aeon framework / autonomous agents |
+| 2026-05-27 | Aeon: The Agent That Watches Itself | Aeon framework overview |
 
 ## Recent Digests
 | Date | Type | Key Topics |

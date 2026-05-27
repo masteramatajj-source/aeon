@@ -1,0 +1,23 @@
+{
+  "root": "card1",
+  "state": {},
+  "elements": {
+    "card1": {
+      "type": "Card",
+      "props": {
+        "title": "article"
+      },
+      "children": [
+        "storylink1"
+      ]
+    },
+    "storylink1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Aeon: The Agent That Watches Itself",
+        "href": "https://github.com/aaronjmars/aeon/blob/main/articles/2026-05-27.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
