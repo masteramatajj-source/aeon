@@ -1,0 +1,23 @@
+{
+  "root": "card-1",
+  "state": {},
+  "elements": {
+    "card-1": {
+      "type": "Card",
+      "props": {
+        "title": "article"
+      },
+      "children": [
+        "storylink-1"
+      ]
+    },
+    "storylink-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "TachikomaRed: The Crab Building Skills for Machines",
+        "href": "https://github.com/aeonframework/aeon/blob/main/articles/2026-05-29-tachikomared.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
