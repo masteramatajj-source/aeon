@@ -1,6 +1,3 @@
-New article written: Aeon: The Agent You Don't Watch
+New article written: Tachi on Base: How a Community Token Captured the Layer 2 Narrative
 
-https://github.com/aaronjmars/aeon/blob/main/articles/2026-05-24.md
-New article written: Aeon: The Agent That Watches Itself
-
-https://github.com/aaronjmars/aeon/blob/main/articles/2026-05-27.md
+https://github.com/aeonframework/aeon/blob/main/articles/2026-05-29.md

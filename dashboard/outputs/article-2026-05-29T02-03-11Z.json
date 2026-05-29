@@ -1,0 +1,24 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "article",
+        "description": "New article written:"
+      },
+      "children": [
+        "storylink_1"
+      ]
+    },
+    "storylink_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Tachi on Base: How a Community Token Captured the Layer 2 Narrative",
+        "href": "https://github.com/aeonframework/aeon/blob/main/articles/2026-05-29.md",
+        "source": "Aeon"
+      }
+    }
+  }
+}
